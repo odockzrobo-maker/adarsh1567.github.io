@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Devaanbu - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Reset & base */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; }
+body { background:#e6f0ff; color:#0a1f44; line-height:1.6; }
+a { text-decoration:none; color:#004080; transition:0.3s; }
+a:hover { color:#001f3f; }
+
+/* Header */
+header { background:#004080; color:white; text-align:center; padding:100px 20px; }
+header h1 { font-family:'Montserrat',sans-serif; font-size:3em; font-weight:900; margin-bottom:10px; }
+header p { font-weight:500; font-size:1.1em; margin-bottom:20px; }
+.header-btn { padding:14px 28px; background:#0066cc; color:white; font-weight:bold; border-radius:8px; }
+.header-btn:hover { background:#003366; }
+
+/* Navigation */
+nav { position:sticky; top:0; background:white; padding:15px 0; box-shadow:0 2px 12px rgba(0,0,0,0.08); z-index:1000; }
+nav ul { display:flex; justify-content:center; flex-wrap:wrap; list-style:none; }
+nav li { margin:0 15px; }
+nav a { font-weight:600; padding:10px 18px; border-radius:6px; }
+nav a.active, nav a:hover { background:#004080; color:white; }
+
+/* Sections */
+section { max-width:1000px; margin:0 auto; padding:80px 20px; }
+section h2 { font-family:'Montserrat',sans-serif; font-size:2.4em; color:#004080; font-weight:700; margin-bottom:40px; border-bottom:3px solid #0066cc; display:inline-block; padding-bottom:5px; }
+
+/* Cards */
+.card { background:white; border-radius:15px; padding:30px; margin-bottom:30px; box-shadow:0 8px 25px rgba(0,0,0,0.08); transition:0.3s; }
+.card:hover { box-shadow:0 12px 35px rgba(0,0,0,0.15); }
+.card .title { font-weight:700; font-size:1.3em; color:#004080; margin-bottom:8px; }
+.card .details { font-style:italic; color:#003366; margin-bottom:15px; }
+.card ul { padding-left:20px; margin-top:10px; }
+
+/* Skills */
+.skills-grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:flex-start; }
+.skill { background:white; border-radius:10px; padding:15px 20px; box-shadow:0 4px 12px rgba(0,0,0,0.08); flex:1 1 200px; transition:0.3s; }
+.skill:hover { box-shadow:0 8px 20px rgba(0,0,0,0.12); }
+.skill p { margin-top:10px; font-weight:500; color:#004080; }
+
+/* Footer */
+footer { text-align:center; padding:25px 0; font-size:0.9em; color:#0a1f44; background:#cce0ff; margin-top:40px; }
+
+/* Responsive */
+@media(max-width:768px){
+  nav ul { flex-direction:column; }
+  nav li { margin:8px 0; }
+  .skills-grid { flex-direction:column; gap:15px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Adarsh Devaanbu</h1>
+  <p>20129 Oakflower Avenue, Tampa, FL | +1 813-727-5391 | adarsh.devaanbu@hotmail.com | ad24bt@fsu.edu</p>
+  <a href="https://drive.google.com/file/d/1I3m5diz5YOED_8vh_GLahe0wp3K4TrrO/view" target="_blank" class="header-btn">Download Resume PDF</a>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about" class="active">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills & Languages</a></li>
+    <li><a href="#activities">Activities</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a finance and economics student at Florida State University with a 4.0 GPA. Passionate about financial analysis, business strategy, and data-driven decision making. Experienced in leadership, public speaking, and mentoring youth in professional and academic environments.</p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <div class="title">Strawberry Crest High School, Dover, FL</div>
+    <div class="details">IB Program, 35-point IB Graduate | May 2021 - May 2025</div>
+  </div>
+  <div class="card">
+    <div class="title">Florida State University, Tallahassee, FL</div>
+    <div class="details">Finance, Double Major in Economics | Expected May 2029</div>
+    <p>GPA: 4.0</p>
+    <p>Honors: Speech & Debate National Qualifier, FBLA State Qualifier, Tamil Sneham Youth Leadership Program Officer</p>
+    <p>Relevant Coursework: Financial Accounting, Personal Finance, Intro to Entrepreneurship, Intro to Business, Computer Science & Excel, Ethics & Computer Science</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <div class="title">Junior Data Analyst - Warrior Tech LLC, Tampa, FL</div>
+    <div class="details">05/01/23 - Present</div>
+    <ul>
+      <li>Organized 100+ Excel spreadsheets for employee and client data; supported 50+ clients in tech & financial consulting.</li>
+      <li>Led consulting efforts for firms including Salesforce and Verizon.</li>
+      <li>Maintained comprehensive financial spreadsheets ensuring transparency, compliance, and audit readiness.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="title">Real Estate Investment Analyst - BricksFolios, Remote</div>
+    <div class="details">05/01/25 - Present</div>
+    <ul>
+      <li>Worked with high school students nationwide teaching real estate investment & financial literacy.</li>
+      <li>Collaborated with a team of 100+ to educate youth on property development, investment, and law.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="title">Youth Leadership President & 1st Place Speaker - Tamil Sneham, Tampa, FL</div>
+    <div class="details">05/01/21 – Present</div>
+    <ul>
+      <li>Served as president & 1st place speaker in YLP 2024.</li>
+      <li>Led weekly meetings improving public speaking for 20+ students.</li>
+      <li>Coached students in confidence, gesture control, and audience engagement with guidance from Dr. Nair.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Languages</h2>
+  <div class="skills-grid">
+    <div class="skill"><strong>Financial Analysis</strong></div>
+    <div class="skill"><strong>Business Strategy</strong></div>
+    <div class="skill"><strong>Microsoft Excel</strong></div>
+    <div class="skill"><strong>Communication</strong></div>
+    <div class="skill"><strong>Leadership</strong></div>
+    <div class="skill"><strong>Public Speaking</strong></div>
+    <div class="skill"><strong>English</strong></div>
+    <div class="skill"><strong>Tamil</strong></div>
+    <div class="skill"><strong>Spanish</strong></div>
+  </div>
+</section>
+
+<section id="activities">
+  <h2>Activities & Interests</h2>
+  <div class="card">
+    <ul>
+      <li>Amateur Boxing & MMA</li>
+      <li>Volunteer at Feeding Tampa Bay Trinity Cafe</li>
+      <li>Party Rental Agency in Tampa</li>
+      <li>Working on cars, building computers, configuring hardware</li>
+      <li>Reading literature</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Adarsh Devaanbu. All rights reserved.
+</footer>
+
+</body>
+</html>
